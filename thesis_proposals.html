@@ -109,12 +109,12 @@ Standard image processing techniques implement feature extractions to provide th
 with proper feedback. Examples of visual features are points, lines, and image moments, which are visible on the
 image captured by camera sensors. However, in order to be more adaptive and comply with unstructured scenes,
 recent trends in the research on VS investigate direct approaches, that treat the entire image as feedback.
+
+ <br>
+ 
 In a previous work [1], we used an artificial Neural Network (NN) that is trained using the information of the
-control structure to compute visual features from raw images (see Fig. above). 
-
-<br>
-
-In this thesis proposal we will build on these ideas to (i) realize complex VS experiments, tracking objects with complicated shapes and appearance
+control structure to compute visual features from raw images (see Fig. above). In this thesis proposal we will 
+build on these ideas to (i) realize complex VS experiments, tracking objects with complicated shapes and appearance
 and (ii) extend the previous architecture to realize a more efficient scheme of machine learning.
 
 <h4>Keywords</h4> 
@@ -157,12 +157,11 @@ Neural network, self-supervised learning, visual servoing, perception for contro
 
 <div class="div_head_2" style="line-height:1.5em" > 
 
-<h3 style="color:blue;">Neural Perception for Visual Servoing</h3> 
-
 <p style="text-align:center;">
-<img alt="VS+NN_bd_new" src="documents/camera_and_traj.png" align="middle" width="450px">
+<h3 style="color:blue;text-align:center;">Imitation Learning for Visual Servoing with Aerial Drones</h3> 
+<img alt="camera_and_traj" src="documents/camera_and_traj.png" align="middle" width="750px">
 </p>
-
+ 
 <br>
  
 Show-case results demonstrated the great abilities of aerial drones in performing agile, aggressive, and fast maneuvers.
@@ -172,7 +171,7 @@ with the computational resources of small drones, which cannot afford big comput
 predictive schemes are difficult to implement and require fine-tuning. To overcome these issues, one could ‘simply’ imitate
 complex trajectories, previously demonstrated and saved in datasets, rather than explicitly implement them.
 
- <br>
+<br>
 
 In previous work [1], [2], we have shown how it is possible to apply the Dynamical System(DS)-based Imitation Learning
 (IL) to the Visual Servoing (VS) case. Combining DS and VS is beneficial for both the techniques: On the one side, it
@@ -207,6 +206,68 @@ the Large Projection Formulation,” IEEE Int. Conf. on Robotics and Automation,
  <li> <a href="https://youtu.be/L7TylqXmGWM" target="_blank">Video of the ICRA23 experiments</a>
  <li> <a href="https://arxiv.org/pdf/2204.05681.pdf" target="_blank">Pdf of the ICRA22 paper</a>
  <li> <a href=" https://www.youtube.com/watch?v=7ogrFxyl2wI" target="_blank">Video of the ICRA22 experiments</a>
+</ul>
+
+</div>
+</td>
+</tbody>
+</tr>
+</table>
+
+
+
+<table valign="top" align="center" style="max-width:800px;">
+
+<tbody>
+
+<tr>
+<td>
+
+<div class="div_head_2" style="line-height:1.5em" > 
+
+<p style="text-align:center;">
+<h3 style="color:blue;text-align:center;">Respecting constraints in fast predictive VS scheme</h3> 
+<img alt="VS_RG_bd" src="documents/VS_RG_bd.png" align="middle" width="750px">
+</p>
+ 
+<br>
+ 
+The generation of efficient robotic motion is the object of lively research activities. The benefits introduced by
+predictive controllers, such as model predictive control, have to be carefully balanced with the fast execution requirements
+of robot controllers. In previous work [1], which focused on visual servoing, we applied the reference governor technique
+to embed the anticipatory behavior in the reference signal of the reactive controller. In practice, the original controller
+remains untouched, and a reference governor block, implemented as a model predictive control, is put upstream to the
+original control loop (see Fig. above). In this way, the MPC, which only computes the references for the original controller
+and, thus, can run at a relatively low frequency, while the fast dynamics is delegated to the reactive controller.
+
+<br
+    
+The RG uses the model of the closed-loop VS behavior to make predictions and compute proper references. Further-
+more, if the prediction is accurate, it can compute novel references for the VS in a way that constraints can be respected
+by the VS law. However, in our previous work, this aspect has not been deeply investigated, and this Thesis proposes to
+analyse the handling of the constraints in the framework sketched in 3 within simulation and experimental environments
+
+<h4>Keywords</h4> 
+
+Visual servoing, model predictive control, reference governor, optimization.
+
+<h4>Requirements</h4> 
+<ul> 
+ <li> Python programming skills
+ <li> Knowledge of ROS (or ROS2)
+ <li> Hands-on experience with simulated environments, and robotic platforms
+</ul>
+ 
+<h4> References</h4> 
+ 
+[1] A. Paolillo, M. Forgione, D. Piga, E. Mingo Hoffman, “Fast Predictive Visual Servoing: a Reference Governor-based
+Approach,” Control Engineering Practice, 2023.
+ 
+<h4> Useful links </h4> 
+ 
+<ul>
+ <li> <a href="https://www.sciencedirect.com/science/article/pii/S0967066123000904/pdf" target="_blank">Pdf of the paper</a>
+ <li> <a href="https://www.sciencedirect.com/science/article/pii/S0967066123000904?via%3Dihub#mmc1" target="_blank">Video of the experiments</a>
 </ul>
 
 </div>
