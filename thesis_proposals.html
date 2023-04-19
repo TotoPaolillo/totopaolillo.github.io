@@ -160,37 +160,53 @@ Neural network, self-supervised learning, visual servoing, perception for contro
 <h3 style="color:blue;">Neural Perception for Visual Servoing</h3> 
 
 <p style="text-align:center;">
-<img alt="VS+NN_bd_new" src="documents/VS+NN_bd_new.png" align="middle" width="750px">
+<img alt="VS+NN_bd_new" src="documents/camera_and_traj.png" align="middle" width="450px">
 </p>
 
 <br>
-  ...
+ 
+Show-case results demonstrated the great abilities of aerial drones in performing agile, aggressive, and fast maneuvers.
+This is made possible thanks to fast and predictive control paradigms. The combination of these schemes with visual
+perception allows these robots to comply with dynamic environments. However, these complex frameworks often conflict
+with the computational resources of small drones, which cannot afford big computational efforts. Furthermore, planning or
+predictive schemes are difficult to implement and require fine-tuning. To overcome these issues, one could ‘simply’ imitate
+complex trajectories, previously demonstrated and saved in datasets, rather than explicitly implement them.
 
-<br>
+ <br>
 
-...
+In previous work [1], [2], we have shown how it is possible to apply the Dynamical System(DS)-based Imitation Learning
+(IL) to the Visual Servoing (VS) case. Combining DS and VS is beneficial for both the techniques: On the one side, it
+allows to include exteroception into the DS, thus adding adaptability; on the other, it allows to avoid specific programming
+of additional tasks into the VS. In this thesis, we want to investigate this kind of approaches on aerial nano-drones. The
+successful application of DS-based VS on nano-drones would allow to achieve high performing and adaptive maneuvers
+without the need of implementing complex and computationally expensive trajectory generators
 
 <h4>Keywords</h4> 
- 
-...
+
+Machine learning, visual servoing, imitation learning, dynamical systems.
 
 <h4>Requirements</h4> 
-<ul>
- <li> ...
- <li> ...
- <li> ...
+<ul> 
+ <li> Python programming skills
+ <li> Knowledge of ROS (or ROS2)
+ <li> Familiarity with machine learning inference methods, such as GPR or GMR
 </ul>
  
 <h4> References</h4> 
  
-[1] ...
+[1] A. Paolillo and M. Saveriano, “Learning Stable Dynamical Systems for Visual Servoing,” IEEE Int. Conf. on Robotics
+and Automation, 2022, pp. 8636–8642. 
+<br>
+[2] A. Paolillo, P. Robuffo Giordano, M. Saveriano, “Dynamical System-based Imitation Learning for Visual Servoing using
+the Large Projection Formulation,” IEEE Int. Conf. on Robotics and Automation, 2023, to appear.
  
 <h4> Useful links </h4> 
  
 <ul>
- <li> <a href="https://arxiv.org/pdf/2210.10549.pdf" target="_blank">Pdf of the paper</a>
- <li> <a href="www.youtube.com/watch?v=7ogrFxyl2wI" target="_blank">Video of the experiments</a>
- <li> <a href="documents/graph_abstract_iros22.pdf" target="_blank">Graphical abstract</a>
+ <li> <a href="https://hal.inria.fr/hal-04019727/document" target="_blank">Pdf of the ICRA23 paper</a>
+ <li> <a href="https://youtu.be/L7TylqXmGWM" target="_blank">Video of the ICRA23 experiments</a>
+ <li> <a href="https://arxiv.org/pdf/2204.05681.pdf" target="_blank">Pdf of the ICRA22 paper</a>
+ <li> <a href=" https://www.youtube.com/watch?v=7ogrFxyl2wI" target="_blank">Video of the ICRA22 experiments</a>
 </ul>
 
 </div>
