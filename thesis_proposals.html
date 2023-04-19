@@ -110,7 +110,8 @@ with proper feedback. Examples of visual features are points, lines, and image m
 image captured by camera sensors. However, in order to be more adaptive and comply with unstructured scenes,
 recent trends in the research on VS investigate direct approaches, that treat the entire image as feedback.
 
- <br>
+<br>
+<br>
  
 In a previous work [1], we used an artificial Neural Network (NN) that is trained using the information of the
 control structure to compute visual features from raw images (see Fig. above). In this thesis proposal we will 
@@ -159,7 +160,7 @@ Neural network, self-supervised learning, visual servoing, perception for contro
 
 <p style="text-align:center;">
 <h3 style="color:blue;text-align:center;">Imitation Learning for Visual Servoing with Aerial Drones</h3> 
-<img alt="camera_and_traj" src="documents/camera_and_traj.png" align="middle" width="750px">
+<img alt="camera_and_traj" src="documents/camera_and_traj.png" align="middle" width="400px">
 </p>
  
 <br>
@@ -171,6 +172,7 @@ with the computational resources of small drones, which cannot afford big comput
 predictive schemes are difficult to implement and require fine-tuning. To overcome these issues, one could ‘simply’ imitate
 complex trajectories, previously demonstrated and saved in datasets, rather than explicitly implement them.
 
+<br>
 <br>
 
 In previous work [1], [2], we have shown how it is possible to apply the Dynamical System(DS)-based Imitation Learning
@@ -227,7 +229,7 @@ the Large Projection Formulation,” IEEE Int. Conf. on Robotics and Automation,
 
 <p style="text-align:center;">
 <h3 style="color:blue;text-align:center;">Respecting constraints in fast predictive VS scheme</h3> 
-<img alt="VS_RG_bd" src="documents/VS_RG_bd.png" align="middle" width="750px">
+<img alt="VS_RG_bd" src="documents/VS_RG_bd.png" align="middle" width="700px">
 </p>
  
 <br>
@@ -240,7 +242,8 @@ remains untouched, and a reference governor block, implemented as a model predic
 original control loop (see Fig. above). In this way, the MPC, which only computes the references for the original controller
 and, thus, can run at a relatively low frequency, while the fast dynamics is delegated to the reactive controller.
 
-<br
+<br>
+<br>
     
 The RG uses the model of the closed-loop VS behavior to make predictions and compute proper references. Further-
 more, if the prediction is accurate, it can compute novel references for the VS in a way that constraints can be respected
