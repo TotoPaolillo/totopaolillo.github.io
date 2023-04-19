@@ -108,7 +108,7 @@ Go to <a href="index.html"> home </a>
 Standard image processing techniques implement feature extractions to provide the Visual Servoing (VS) scheme
 with proper feedback. Examples of visual features are points, lines, and image moments, which are visible on the
 image captured by camera sensors. However, in order to be more adaptive and comply with unstructured scenes,
-recent trends in the research on VS investigate direct approaches, that treat the entire image as feedback.
+recent trends in the VS community investigate direct approaches, that treat the entire image as feedback.
 
 <br>
 <br>
@@ -167,7 +167,7 @@ Neural network, self-supervised learning, visual servoing, perception for contro
  
 <br>
  
-Show-case results demonstrated the great abilities of aerial drones in performing agile, aggressive, and fast maneuvers.
+Impressive results demonstrated the great abilities of aerial drones in performing agile, aggressive, and fast maneuvers.
 This is made possible thanks to fast and predictive control paradigms. The combination of these schemes with visual
 perception allows these robots to comply with dynamic environments. However, these complex frameworks often conflict
 with the computational resources of small drones, which cannot afford big computational efforts. Furthermore, planning or
@@ -178,11 +178,11 @@ complex trajectories, previously demonstrated and saved in datasets, rather than
 <br>
 
 In previous work [1], [2], we have shown how it is possible to apply the Dynamical System(DS)-based Imitation Learning
-(IL) to the Visual Servoing (VS) case. Combining DS and VS is beneficial for both the techniques: On the one side, it
+(IL) to the Visual Servoing (VS) case. Combining DS and VS is beneficial for both the techniques. On the one side, it
 allows to include exteroception into the DS, thus adding adaptability; on the other, it allows to avoid specific programming
 of additional tasks into the VS. In this thesis, we want to investigate this kind of approaches on aerial nano-drones. The
 successful application of DS-based VS on nano-drones would allow to achieve high performing and adaptive maneuvers
-without the need of implementing complex and computationally expensive trajectory generators
+without the need of implementing complex and computationally expensive trajectory generators.
 
 <h4>Keywords</h4> 
 
@@ -243,16 +243,16 @@ predictive controllers, such as model predictive control, have to be carefully b
 of robot controllers. In previous work [1], which focused on visual servoing, we applied the reference governor technique
 to embed the anticipatory behavior in the reference signal of the reactive controller. In practice, the original controller
 remains untouched, and a reference governor block, implemented as a model predictive control, is put upstream to the
-original control loop (see Fig. above). In this way, the MPC, which only computes the references for the original controller
-and, thus, can run at a relatively low frequency, while the fast dynamics is delegated to the reactive controller.
+original control loop (see Fig. above). In this way, the MPC only computes the references for the original controller
+and can run at a relatively low frequency, while the fast dynamics is delegated to the reactive controller.
 
 <br>
 <br>
     
-The RG uses the model of the closed-loop VS behavior to make predictions and compute proper references. Further-
-more, if the prediction is accurate, it can compute novel references for the VS in a way that constraints can be respected
+The RG uses the model of the closed-loop VS behavior to make predictions and compute proper references. Furthermore, 
+if the prediction is accurate, it can compute novel references for the VS in a way that constraints can be respected
 by the VS law. However, in our previous work, this aspect has not been deeply investigated, and this Thesis proposes to
-analyse the handling of the constraints in the framework sketched in 3 within simulation and experimental environments
+analyse the handling of the constraints in the framework sketched in the Figure within simulation and experimental environments.
 
 <h4>Keywords</h4> 
 
